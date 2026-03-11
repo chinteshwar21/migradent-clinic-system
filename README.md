@@ -1,29 +1,24 @@
-# New Migradent (Monorepo)
+# Migradent Clinic System
 
-This repository contains a lightweight monorepo scaffold for the Migradent MVP. It includes:
+Migradent is a dental clinic management backend system built using Spring Boot.
 
-- `apps/api-server` — minimal Node.js Express API
-- `apps/web-client` — minimal static web client (calls the API)
-- `packages/scoring-engine` — small scoring library used by the API
-- `docker-compose.yml` — local Postgres and Redis for development
-- Documentation files (product & architecture) already present in repo root
+## Tech Stack
+- Java
+- Spring Boot
+- MySQL
+- JWT Authentication
+- Maven
 
-Quick start (Windows PowerShell):
+## Features
+- User authentication
+- Appointment management
+- Patient records
+- Secure API using JWT
 
-```powershell
-# 1) Install dependencies (at repo root)
-npm install
+## Setup
 
-# 2) Start backend API (development)
-npm run dev:api
+1. Clone the repo
+2. Configure MySQL in application.properties
+3. Run:
 
-# 3) Serve web-client dist (for static demo)
-npm run dev:web
-
-# 4) Or start Docker dependencies
-npm run docker:up
-```
-
-Notes:
-- This is a scaffold. Run `npm install` in the repo root to fetch workspace tooling where appropriate.
-- See `apps/api-server/README.md` and `apps/web-client/README.md` for per-app instructions.
+mvn spring-boot:run
