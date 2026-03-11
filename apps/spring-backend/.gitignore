@@ -1,0 +1,19 @@
+target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+application.properties
+.env
